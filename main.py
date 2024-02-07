@@ -71,12 +71,15 @@ for i in range(2):
     products_flipkart_all=soup.find_all('a',class_='IRpwTa')
     products_price_flipkart_all=soup.find_all('a',class_='_30jeq3')
     print(products_price_flipkart_all)
-    for p,j in zip(products_flipkart_all,products_price_flipkart_all):
-        products_flipkart.append(p['title'])
-        print(p['title'])
+    # for p,j in zip(products_flipkart_all,products_price_flipkart_all):
+
+    #     products_flipkart.append(p['title'])
+
+
+        # print(p['title'])
         # products_price_flipkart.append(j['text'])
-    print(products_flipkart)
-    print(products_price_flipkart)
+    # print(products_flipkart)
+    # print(products_price_flipkart)
     # products_flipkart = browser.find_elements(By.XPATH, "//a[@class='IRpwTa']")
     # products_flipkart=browser.find_elements( By.CLASS_NAME, 'IRpwTa' )
     # products_price_flipkart = browser.find_elements(By.XPATH, "//div[@class='_30jeq3']")
@@ -87,9 +90,9 @@ for i in range(2):
     #     products_price_flipkart.append(j.title)
     # print(products)
     # print(products_price)
-    next_button = browser.find_element(By.XPATH, "//a[@class='_1LKTO3']")
-    href_value = next_button.get_attribute("href")
-    print(href_value)
+    # next_button = browser.find_element(By.XPATH, "//a[@class='_1LKTO3']")
+    # href_value = next_button.get_attribute("href")
+    # print(href_value)
     # elems = WebDriverWait(webdriver,10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".sc-eYdvao.kvdWiq [href]")))        
     # next_button['href'].click()
     # sleep(4)
